@@ -1,22 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ex 1 - FOTOS
+
+x=[10 20 30];  % valores de x 
+y=[log10(9.3) log10(4.7) log10(3.2)];     % valores de y
+%y=[0.5 2 5 10 18];
+n=length(x);         % determina o número de elementos de x
+g0=log10(x);              % função g0= log(x) -- S(1)
+%g1=cos(x);                 % função g1=cos(x) 
+%g2(1,1:n)=1          % g2 é uma matriz linha composta de 1 e n é o número de colunas
+g2= [1 1 1];          % g2 é uma matriz linha composta de 1 e n é o número de colunas
+g=[g0;g2]';        % matriz 4x3
+G=g'*g;               % tabela contendo o sistema normal lado esquerdo
+b=y*g;                % tabela contendo o somatório  gi*f.
+S=b*inv(G);           % solução do sistema linear (valores a0, a1 e a2)
+b=S(1)              
+A=S(2)  %% acha o "a" isolando ele 
+%a0=S(3)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ex 2 - Ajuste não linear
+
+% x=[1 2 3 4 5];  % valores de x 
+% y=[log10(0.5) log10(2) log10(5) log10(10) log10(18)];     % valores de y
+% %y=[0.5 2 5 10 18];
+% n=length(x);         % determina o número de elementos de x
+% g0=log10(x);              % função g0= log(x) -- S(1)
+% %g1=cos(x);                 % função g1=cos(x) 
+% g2(1,1:n)=1;          % g2 é uma matriz linha composta de 1 e n é o número de colunas
+% g=[g0;g2]';        % matriz 4x3
+% G=g'*g;               % tabela contendo o sistema normal lado esquerdo
+% b=y*g;                % tabela contendo o somatório  gi*f.
+% S=b*inv(G);           % solução do sistema linear (valores a0, a1 e a2)
+% b=S(1)              
+% A=S(2)  %% acha o "a" isolando ele 
+% %a0=S(3)
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LISTA EX MMQ
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EX 5 -- quando tem uma função diferente das normais
 
-x=[0 pi/6 pi/2 7*pi/6];  % valores de x 
-y=[0 0.8 0.5 1];     % valores de y 
-n=length(x);         % determina o número de elementos de x
-g0=cos(2*x);              % função g0= cos(2x) -- S(1)
-g1=cos(x);                 % função g1=cos(x) 
-g2(1,1:n)=1;          % g2 é uma matriz linha composta de 1 e n é o número de colunas
-g=[g0;g1;g2]';        % matriz 4x3
-G=g'*g;               % tabela contendo o sistema normal lado esquerdo
-b=y*g;                % tabela contendo o somatório  gi*f.
-S=b*inv(G);           % solução do sistema linear (valores a0, a1 e a2)
-a2=S(1)              
-a1=S(2)
-a0=S(3)
+% x=[0 pi/6 pi/2 7*pi/6];  % valores de x 
+% y=[0 0.8 0.5 1];     % valores de y 
+% n=length(x);         % determina o número de elementos de x
+% g0=cos(2*x);              % função g0= cos(2x) -- S(1)
+% g1=cos(x);                 % função g1=cos(x) 
+% g2(1,1:n)=1;          % g2 é uma matriz linha composta de 1 e n é o número de colunas
+% g=[g0;g1;g2]';        % matriz 4x3
+% G=g'*g;               % tabela contendo o sistema normal lado esquerdo
+% b=y*g;                % tabela contendo o somatório  gi*f.
+% S=b*inv(G);           % solução do sistema linear (valores a0, a1 e a2)
+% a2=S(1)              
+% a1=S(2)
+% a0=S(3)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EX 4 - É a de calçados la em baixo
