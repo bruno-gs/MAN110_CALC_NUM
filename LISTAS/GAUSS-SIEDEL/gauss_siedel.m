@@ -1,13 +1,24 @@
+%% P2 - EX3 - GAUSS-SIEDEL
+%% 2 CASAS DECIMAIS 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EX H
+%% matriz estendida
+Total = [20 -2 2 -4; 2 -20 -2 4; 2 2 -10 8]
+
+%% resolvendo por rref
+Respostas = rref(Total)
+
 %% LISTA GAUSS-SIEDEL
 %% 2 CASAS DECIMAIS 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% EX H
 %% matriz estendida
-Total = [2 -10 10; 15 3 7.5]
+% Total = [2 -10 10; 15 3 7.5]
 
-%% resolvendo por rref
-Respostas = rref(Total)
+% %% resolvendo por rref
+% Respostas = rref(Total)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
